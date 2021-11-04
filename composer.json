@@ -1,0 +1,17 @@
+{
+    "name": "creativestyle/magesuite-improve-varnish-purge-performance",
+    "description": "This module improves Varnish tag purging performance by simplifying regex pattern removing comma conditional check, and making sure leading and trailing commas are always present in X-Magento-Tags headers.",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MageSuite\\ImproveVarnishPurgePerformance\\": ""
+        }
+    }
+}
