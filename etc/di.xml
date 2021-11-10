@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\App\Response\HttpInterface">
+        <plugin name="add_leading_and_trailing_comma_to_result_header" type="MageSuite\ImproveVarnishPurgePerformance\Plugin\Framework\App\Response\HttpInterface\AddCommasToXMagentoTagsHeader"/>
+    </type>
+    <type name="Magento\CacheInvalidate\Model\PurgeCache">
+        <plugin name="modify_purge_cache_tag_pattern" type="MageSuite\ImproveVarnishPurgePerformance\Plugin\CacheInvalidate\Model\PurgeCache\ModifyPurgeCacheTagPattern"/>
+    </type>
+</config>
