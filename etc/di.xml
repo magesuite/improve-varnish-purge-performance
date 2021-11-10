@@ -6,7 +6,4 @@
     <type name="Magento\CacheInvalidate\Model\PurgeCache">
         <plugin name="modify_purge_cache_tag_pattern" type="MageSuite\ImproveVarnishPurgePerformance\Plugin\CacheInvalidate\Model\PurgeCache\ModifyPurgeCacheTagPattern"/>
     </type>
-    <type name="Magento\CacheInvalidate\Observer\InvalidateVarnishObserver">
-        <plugin name="modify_purge_cache_tag_pattern_alt" type="MageSuite\ImproveVarnishPurgePerformance\Plugin\CacheInvalidate\Observer\InvalidateVarnishObserver\ModifyPurgeCacheTagPattern"/>
-    </type>
 </config>
