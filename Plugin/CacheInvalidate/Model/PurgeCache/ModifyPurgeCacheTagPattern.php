@@ -11,6 +11,6 @@ class ModifyPurgeCacheTagPattern
 
         $tags = preg_replace('/\(\(\^\|\,\)(.*)\(\,\|\$\)\)/', ',$1,', $tags);
 
-        return $tags;
+        return [$tags];
     }
 }
